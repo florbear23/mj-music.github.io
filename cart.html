@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>Cart</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand-title">Music Store</div>
+   
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"style="padding-right: 5px;"></i>Home</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Shop
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="shop.html">Guitar</a>
+            <a href="shop.html">Drums</a>
+            <a href="shop.html">Piano</a>
+            <a href="shop.html">Others</a>
+          </div>
+        </div>
+        <li><a href="about.html"><i class="fas fa-address-card" style="padding-right: 5px;"></i>About</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Cart</a></li></a></li>
+        <li><a href="login.html"><i class="fa fa-user-circle" style="padding-right: 5px;" aria-hidden="true"></i>Login</a></li>
+       <div class="search"> <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search" style="float: left; display: inline;"></i></button></div>
+      </ul>
+    </div>
+  </nav>
+  
+     
+  <div class="title-name">
+    <H1 style="text-align: center;  margin: 20px 0 30px 0px;">Cart List</H1>
+  </div>
+
+      <main>
+        <div class="basket">
+          <div class="basket-module">
+            <label for="promo-code">Enter a promotional code</label>
+            <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+            <button class="promo-code-cta">Apply</button>
+          </div>
+          <div class="basket-labels">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Price</li>
+              <li class="quantity">Quantity</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="img/cart-pic/drums.jpg" alt="Placholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">1</span> MJ Guitar</strong> Expensive</h1>
+                <p><strong>Guitar,Telecaster</strong></p>
+                <p>Product Code - 232321939</p>
+              </div>
+            </div>
+            <div class="price">1900.99</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">1900.99</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="img/cart-pic/accesories.jpg" alt="Placholder Image 2" class="product-frame">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">1</span>Accesories</strong>Mixer</h1>
+                <p><strong>Boss,99 Chanel</strong></p>
+                <p>Product Code - 232321939</p>
+              </div>
+            </div>
+            <div class="price">1900.99</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">1900.99</div>
+            <div class="remove">
+              <button>Remove</button>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="summary">
+            <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">3,801.98</div>
+              <div class="summary-promo hide">
+                <div class="promo-title">Promotion</div>
+                <div class="promo-value final-value" id="basket-promo"></div>
+              </div>
+            </div>
+            <div class="summary-delivery">
+              <select name="delivery-collection" class="summary-delivery-selection">
+                  <option value="0" selected="selected">Select Collection or Delivery</option>
+                 <option value="collection">Collection</option>
+                 <option value="first-class">Royal Mail 1st Class</option>
+                 <option value="second-class">Royal Mail 2nd Class</option>
+                 <option value="signed-for">Royal Mail Special Delivery</option>
+              </select>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">3,801.98</div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta">Go to Secure Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+
+        <!-- footer -->
+    
+     <footer style="margin-top:100px;">
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+              <h1 style="color: beige;">Undecided</h1>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"><abbr title=""></abbr> Undecided</i></a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"><abbr title=""></abbr>  Undecided</i></a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Fast Link</div>
+          <div><a href="index.html"><i class="fas fa-home"style="padding-right: 5px;"></i>Home</a></div>
+          <div><a href="shop.html"><i class="fas fa-store" style="padding-right: 5px;"></i>Shop</a></div>
+          <div><a href="about.html"><i class="fas fa-address-card" style="padding-right: 5px;"></i>About</a></div>
+          <div><a href="cart.html"><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Cart</a></div>
+          <div><a href="login.html"><i class="fa fa-user-circle" style="padding-right: 5px;" aria-hidden="true"></i>Login</a></div>
+         
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom" style="text-align: center;">
+        <p>Copyright © 2021 <a href="#">Mj Music store</a> All rights reserved</p>
+      </div>
+    </footer>
+   
+<!-- end Footer -->
+
+</body>
+<script src="main.js"></script>
+</html>
