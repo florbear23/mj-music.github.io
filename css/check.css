@@ -5,100 +5,212 @@
     box-sizing: border-box;
   }
 
-  .check{
-      margin: 30px;
-  }
-  .row {
-    display: -ms-flexbox; /* IE10 */
+  .container{
+    max-height: 5000px;
+    height: auto;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    margin: 0 -16px;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px auto ;
   }
-  
-  .col-25 {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%; /* IE10 */
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
- .row .col-50 input[type=text] {
+
+  .billing{
+
+    max-height: 1000px;
+    height: auto;
+    max-width: 800px;
     width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: black solid 3px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+
   }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
+
+  .billing-list{
+
+    max-height: 517px;
+    height: 517px;
+    max-width: 400px;
+    width: 100%;
+    border: black solid 3px;
+    margin: 0 auto;
+    background-color: rgb(233, 233, 233);
   }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
+
+
+  .form{
+    max-height: 200px;
+    height:60px;
+    max-width: 300px;
+    width: 100%;
+    margin: 10px auto;
   }
-  
-  .btn-1 {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
+
+  form .form input[type='text']{
+    width: 100%;
+    height: 28px;
+  }
+  .check{
+
+    width: 300px;
+    height: 30px;
+    margin: 10px auto;
+
+  }
+  .process{
+
+    width:700px;
+    height: 45px;
+    margin: 10px auto;
+
+  }
+  .process button{
+    width:100%;
+    height: 35px;
+    background-color: limegreen;
+    color: #fff;
     border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    
+  }
+  
+
+  table{
+    max-width: 400px;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+  td{
+    border: 1px black solid;
+  }
+  td img{
+    max-width: 50px;
+    width: auto;
+    max-height: 50px;
+    height: auto;
+  }
+  .total-all{
+    max-width: 300px;
     width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
+    max-height: 30px;
+    height: auto;
+    margin: 10px auto;
   }
-  
-  .btn:hover {
-    background-color: #45a049;
+
+  .total-all p{
+    text-align: center;
+    font-size: x-large;
   }
-  
- .col-25 .container a {
-    color: black;
-  }
-  
-  hr {
-    border: 1px solid lightgrey;
-  }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
+
+  @media only screen and (max-width: 1249px){
+    .container{
+      max-width: 1024px;
     }
-    .col-25 {
-      margin-bottom: 20px;
+
+    .billing{
+      max-width: 600px;
     }
+    .form{
+      max-width: 250px;
+    }
+   
+    .process{
+      width: 300px;
+    }
+    .billing-list{
+
+      max-height: 800px;
+      height: 517px;
+    }
+
   }
+  
+  @media only screen and (max-width: 1023px){
+    .container{
+      max-width: 768px;
+    }
+
+    .billing{
+      max-width: 350px;
+    }
+    .form{
+      max-width: 150px;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 767px){
+    .container{
+      max-width: 601px;
+    }
+
+    .billing{
+      max-width: 601px;
+      order: 2;
+
+    }
+    .form{
+      max-width: 110px;
+    }
+    .billing-list{
+      max-width: 601px;
+      height: auto;
+      margin: 10px 0;
+      order: 1;
+    }
+    
+    
+  }
+  
+  @media only screen and (max-width: 600px){
+    .container{
+      max-width: 380px;
+    }
+
+    .form{
+      max-width: 170px;
+    }
+    table{
+      max-width: 370px;
+      font-size: 12px;
+    }
+    
+   }
+  
+   @media only screen and (max-width: 379px){
+  
+    .container{
+      max-width: 320px;
+    }
+   
+    .form{
+      max-width: 140px;
+    }
+    table{
+      max-width: 308px;
+      font-size: 12px;
+    }
+   }
+  
+   @media only screen and (max-width: 319px){
+    .container{
+      max-width: 280px;
+    }
+    .form{
+      max-width: 120px;
+    }
+    table{
+      max-width: 270px;
+      font-size: 10px;
+    }
+   }
+  
   

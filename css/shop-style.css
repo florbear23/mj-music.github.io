@@ -3,82 +3,174 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.container{
+ max-height: 5000px;
+ height:1000px;
+  margin-top: 20px;
+}
+.button-container{
+  max-width:100%;
+  max-height: 70px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+}
+.button-container button{
+  max-width: 200px;
+  width: 100%;
+  max-height: 50px;
+  height: 40px;
+  color: #fff;
+  background-color: black;
+  margin:  10px;
+  align-items: center;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.item-container{
+  max-width:100%;
+  max-height: 5000px;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+ align-items: center;
+}
+.card{
+  display: none; /* Hidden by default */
+  margin: 10px auto;
+  background-color: #fff !important;
+  height: 400px;
+}
+.show {
+  display: block;
+}
+@media only screen and (max-width:1249px){
+  .container{
+    max-width:1024px;
+    max-height: 2000px;
+    height:950px;
+  }
+  .button-container button{
+    max-width: 150px;
+    font-size: 12px; 
+    height: 35px; 
+  }
+  .item-container{
+    height:auto;
+  }
+  .item-container .card{
+    height: 400px;
+    max-width: 230px;
+    margin: 20px auto  !important;
+  }
+}
+@media only screen and (max-width:1023px){
+  .container{
+    max-width: 768px;
+    max-height:1400px;
+    height:1400px;
+  }
+  .button-container button{
+    max-width: 100px;
+    font-size: 12px; 
+    height: 35px; 
+  }
+  .item-container .card{
+    height: 400px;
+    max-width: 230px;
+    margin: 20px auto  !important;
+  }
+}
+@media only screen and (max-width:767px){
+  .container{
+    max-width: 601px;
+    max-height:3000px;
+    height:1400px;
+  }
+  .button-container button{
+    max-width: 80px;
+    font-size: 12px; 
+    height: 35px; 
+  }
+  .item-container .card{
+    max-width: 170px;
+  }
 }
 
+@media only screen and (max-width: 600px){
 
-
-.container-shop{
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Style the tab */
- .tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 10%;
-    height: 100%;
-    position: sticky;
-    top: 5px;
-  
+  .container{
+    max-width: 560px;
+    max-height: 3000px;
+    height:auto;
   }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 10px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current "tab button" class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    float: left;
-    padding: 0px 12px;
-    width: 90%;
+  .button-container{
     height: auto;
-    display: none;
+  }
+  .button-container button{
+    max-width: 45px;
+    font-size: 8px; 
+    height: 30px; 
+  }
+  .item-container{
+    max-height: 100%;
+    height:auto;
+    align-items: center;
+  }
+  .item-container .card{
+    height: 400px;
+    max-width: 160px;
+    margin: 20px auto  !important; 
+  }
+}
+@media only screen and (max-width: 359px){
+  .container{
+    max-width: 320px;
+    max-height:3000px;
+  }
+  .button-container button{
+    max-width: 35px;
+    font-size: 8px; 
+    height: 20px; 
+  }
+  .item-container .card{
+    max-width: 270px;
+    height: 390px !important;
+    
+    margin: 20px auto  !important;
+  }
+}
+@media only screen and (max-width: 349px){
+  .container{
+    max-width: 280px;
+    max-height:4000px;
+    height: auto;
+  }
+  .button-container button{
+    max-width: 28px;
+    font-size: 7px; 
+    height: 20px; 
+  }
+  .item-container .card{
+    max-width: 250px;
+    height: 400px !important;
+    margin: 20px auto  !important;
+    
   }
 
-  @media only screen and (max-width: 600px){
-    
-    .tab {
-        
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 50px;
-        position: relative;
-      }
-      
-    .tabcontent {
-       margin: 20px 0 0 0 ;
-        padding: 0px;
-        width: 100%;
-        height: auto;
-        display: none;
-      }
-   }
+}

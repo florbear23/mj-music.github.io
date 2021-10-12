@@ -42,98 +42,71 @@
     </div>
   </nav>
   
-     
-  <div class="title-name">
-    <H1 style="text-align: center;  margin: 20px 0 30px 0px;">Cart List</H1>
-  </div>
-
-      <main>
-        <div class="basket">
-          <div class="basket-module">
-            <label for="promo-code">Enter a promotional code</label>
-            <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
-            <button class="promo-code-cta">Apply</button>
+    <div class="container"> 
+ 
+      
+      <div class="item-cart">
+        <div class="title-cart">
+          <p>My Shopping Cart</p>
+        </div>
+        <div class="cart-informatin">
+          <div class="information">
+            <img src="img/categories/guitar.jpg" alt="">
           </div>
-          <div class="basket-labels">
+          <div class="information">
+            <p class="title-info"> infomation</p>
             <ul>
-              <li class="item item-heading">Item</li>
-              <li class="price">Price</li>
-              <li class="quantity">Quantity</li>
-              <li class="subtotal">Subtotal</li>
+              <li>Name: Mega Drums</li>
+              <li>Set: Full set</li>
+              <li>Color: Black</li>
             </ul>
           </div>
-          <div class="basket-product">
-            <div class="item">
-              <div class="product-image">
-                <img src="img/cart-pic/drums.jpg" alt="Placholder Image 2" class="product-frame">
-              </div>
-              <div class="product-details">
-                <h1><strong><span class="item-quantity">1</span> MJ Guitar</strong> Expensive</h1>
-                <p><strong>Guitar,Telecaster</strong></p>
-                <p>Product Code - 232321939</p>
-              </div>
-            </div>
-            <div class="price">1900.99</div>
-            <div class="quantity">
-              <input type="number" value="1" min="1" class="quantity-field">
-            </div>
-            <div class="subtotal">1900.99</div>
-            <div class="remove">
-              <button>Remove</button>
-            </div>
+          <div class="information">
+            <p class="title-info"> Price</p>  
+            <p>₱10,000</p>
           </div>
-          <div class="basket-product">
-            <div class="item">
-              <div class="product-image">
-                <img src="img/cart-pic/accesories.jpg" alt="Placholder Image 2" class="product-frame">
-              </div>
-              <div class="product-details">
-                <h1><strong><span class="item-quantity">1</span>Accesories</strong>Mixer</h1>
-                <p><strong>Boss,99 Chanel</strong></p>
-                <p>Product Code - 232321939</p>
-              </div>
-            </div>
-            <div class="price">1900.99</div>
-            <div class="quantity">
-              <input type="number" value="1" min="1" class="quantity-field">
-            </div>
-            <div class="subtotal">1900.99</div>
-            <div class="remove">
-              <button>Remove</button>
-            </div>
+          <div class="information">
+            <p class="title-info"> Qty.</p>
+            <input type="number">
+          </div>
+          <div class="information abang-1">
+            <p class="title-info"> Total:</p>
+            <p> ₱10,000</p>
           </div>
         </div>
-        <aside>
-          <div class="summary">
-            <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
-            <div class="summary-subtotal">
-              <div class="subtotal-title">Subtotal</div>
-              <div class="subtotal-value final-value" id="basket-subtotal">3,801.98</div>
-              <div class="summary-promo hide">
-                <div class="promo-title">Promotion</div>
-                <div class="promo-value final-value" id="basket-promo"></div>
-              </div>
-            </div>
-            <div class="summary-delivery">
-              <select name="delivery-collection" class="summary-delivery-selection">
-                  <option value="0" selected="selected">Select Collection or Delivery</option>
-                 <option value="collection">Collection</option>
-                 <option value="first-class">Royal Mail 1st Class</option>
-                 <option value="second-class">Royal Mail 2nd Class</option>
-                 <option value="signed-for">Royal Mail Special Delivery</option>
-              </select>
-            </div>
-            <div class="summary-total">
-              <div class="total-title">Total</div>
-              <div class="total-value final-value" id="basket-total">3,801.98</div>
-            </div>
-            <div class="summary-checkout">
-              <button class="checkout-cta">Go to Secure Checkout</button>
-            </div>
+        <div class="cart-informatin">
+          <div class="information">
+            <img src="img/categories/drums.jpg" alt="">
           </div>
-        </aside>
-      </main>
-
+          <div class="information">
+            <p class="title-info"> infomation</p>
+            <ul>
+              <li>Name: Guitar Caster</li>
+              <li>Set: Full set</li>
+              <li>Color: Blue</li>
+            </ul>
+          </div>
+          <div class="information">
+            <p class="title-info"> Price</p>  
+            <p>₱8,000</p>
+          </div>
+          <div class="information">
+            <p class="title-info"> Qty.</p>
+            <input type="number">
+          </div>
+          <div class="information abang-1">
+            <p class="title-info"> Total:</p>
+            <p> ₱8,000</p>
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+       <p class="total-title">Check Out</p>
+       <hr>
+       <p><b>Total Cart:</b>₱18,000</p>
+      <div> <button> CHECK OUT <ABbr></ABbr><i class="fas fa-lock"></i></button></div>
+      </div>
+    </div>
 
         <!-- footer -->
     
@@ -163,6 +136,11 @@
           <div><a href="login.html"><i class="fa fa-user-circle" style="padding-right: 5px;" aria-hidden="true"></i>Login</a></div>
          
         </div>
+
+
+
+
+
         <div class="right box">
           <div class="topic">Subscribe us</div>
           <form action="#">

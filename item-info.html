@@ -45,75 +45,139 @@
   </nav>
 
 
-      <div class="title-name">
-        <H1 style="text-align: center;  margin: 20px 0 30px 0px;">Item Info</H1>
-      </div>
-     <!-- Item-info -->
-
-      <main class="container">
-        <!-- Left Column / Headphones Image -->
-        <div class="left-column">
-          <img data-image="black" src="img/guitarf.jpg" alt="">
-          <img data-image="blue" src="img/drumsf.jpg" alt="" >
-          <img data-image="red" class="active " src="img/drumsf.jpg" alt="">
-        </div>
-  
-  
-        <!-- Right Column -->
-        <div class="right-column">
-          <!-- Product Description -->
-          <div class="product-description">
-            <span>Guitar</span>
-            <h1>Telecaster Guitar</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum eius illum sed maiores tempore eveniet!</p>
-          </div>
-          <!-- Product Configuration -->
-          <div class="product-configuration">
-  
-            <!-- Product Color -->
-            <div class="product-color">
-              <span>Color</span>
-  
-              <div class="color-choose">
-                <div>
-                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-                  <label for="red"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
-                  <label for="blue"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="black" type="radio" id="black" name="color" value="black">
-                  <label for="black"><span></span></label>
-                </div>
-              </div>
-  
-            </div>
-  
-            <!-- Cable Configuration -->
-            <div class="cable-config">
-              <span>Cable configuration</span>
-  
-              <div class="cable-choose">
-                <button>Straight</button>
-                <button>Coiled</button>
-                <button>Long-coiled</button>
-              </div>
-  
-              <a href="#">How to configurate your headphones</a>
-            </div>
-          </div>
-  
-          <!-- Product Pricing -->
-          <div class="product-price">
-            <span>₱1900</span>
-            <a href="#" class="cart-btn">Add to cart</a>
-          </div>
-        </div>
-      </main>
       
-      <!-- end -->
+     <!-- Item-info -->
+      <div class="container">
+        <div class="picture-container"  >
+
+          <div class="main-item ">
+            <img  src="img/categories/drums.jpg" alt=""id="expandedImg" >
+          </div>
+          <div class="change-item ">
+            <img  src="img/categories/guitar.jpg" alt="" onclick="myFunction(this);" >
+          </div>
+          <div class="change-item ">
+            <img  src="img/categories/drums.jpg" alt="" onclick="myFunction(this);" >
+          </div>
+          <div class="change-item   ">
+            <img  src="img/categories/piano.jpg" alt=""  onclick="myFunction(this);">
+          </div>
+          <div class="change-item ">
+            <img src="img/categories/accesories.jpg" alt=""  onclick="myFunction(this);">
+          </div>
+
+
+
+        </div>
+
+        <div class="iteminfo-container">
+          <div>
+          <p class="mga-item">Guitar/Drums/Piano/Accesories</p>
+          <h1>Item Sample</h1>
+          <br>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p class="price">₱1900.99</p>
+          <p class="Information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe consequuntur
+            adipisci non iusto temporibus ab quidem dolorum deserunt unde vero?
+          </p>
+          <div class="button">
+            <input type="number">
+            <button> Add To Cart</button>
+          </div>
+
+        </div>
+
+        </div>
+
+        <div class="tab-container">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'discrition')">Discription</button>
+            <button class="tablinks" onclick="openCity(event, 'review')">Customer/Review</button>
+            <button class="tablinks" onclick="openCity(event, 'return')">Shipping/Returs</button>
+           
+          </div>
+          
+          <div id="discrition" class="tabcontent">
+            <h3>Discription</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi enim esse corporis voluptas inventore ab sequi hic quas repellendus deleniti.</p>
+          </div>
+          
+          <div id="review" class="tabcontent">
+            <h3>Customer/Review</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, deserunt sed! Iste corrupti et obcaecati!</p> 
+          </div>
+          
+          <div id="return" class="tabcontent">
+            <h3>Shipping/Returs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut recusandae nisi sequi illum ut labore vel aperiam, quidem ratione dicta?</p>
+          </div>
+        </div>
+
+        <div class="related-item">
+            <div class="title-name">
+                <H1 style="text-align: center;  margin: 20px 0 30px 0px;">Related Item</H1>
+            </div>
+            <div class="f-product">
+              <div class="card">
+              <a href="item-info.html"><img src="img/categories/drums.jpg" class="img-product" alt="Denim Jeans" ></a>
+                <h1>Tailored Jeans</h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p class="price">₱1900.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum facere tempore eius excepturi. Doloremque.</p>
+                <p><button><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Add to Cart</button></p>
+              </div>
+
+              <div class="card">
+                <img src="img/categories/guitar.jpg" alt="Denim Jeans" class="img-product">
+                <h1>Tailored Jeans</h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p class="price">₱1900.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum facere tempore eius excepturi. Doloremque.</p>
+                <p><button><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Add to Cart</button></p>
+              </div>
+
+              <div class="card">
+                <img src="img/categories/accesories.jpg" alt="Denim Jeans" class="img-product">
+                <h1>Tailored Jeans</h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p class="price">₱1900.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum facere tempore eius excepturi. Doloremque.</p>
+                <p><button><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Add to Cart</button></p>
+              </div>
+
+              <div class="card">
+                <img src="img/categories/piano.jpg" alt="Denim Jeans" class="img-product">
+                <h1>Tailored Jeans</h1>
+              
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p class="price">₱1900.99</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum facere tempore eius excepturi. Doloremque.</p>
+                <p><button><i class="fas fa-shopping-cart" style="padding-right: 5px;" ></i>Add to Cart</button></p>
+              </div>
+          </div>
+        </div>
+      </div>
 
 
      <!-- footer -->
@@ -170,4 +234,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
 <script src="main.js"></script>
+<script>
+ 
+</script>
 </html>
